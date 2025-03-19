@@ -14,8 +14,11 @@ public class TryCatchDivision {
 
         try {
             int resultado = primeiroNum / segundoNum;
+            System.out.println("O resultado é "+resultado);
         }catch (ArithmeticException e){
             e.printStackTrace();
+        } finally {
+            teclado.close();
         }
     }
 }
