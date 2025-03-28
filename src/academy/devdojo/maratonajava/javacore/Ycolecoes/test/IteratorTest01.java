@@ -4,11 +4,12 @@ import academy.devdojo.maratonajava.javacore.Ycolecoes.dominio.Manga;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 
 public class IteratorTest01 {
     public static void main(String[] args) {
-        List<Manga> mangas = new ArrayList<>(6);
+        List<Manga> mangas = new LinkedList<>();
         mangas.add(new Manga(5L, "One piece", 19.99, 0));
         mangas.add(new Manga(3L, "Attack on titan", 19.99, 5));
         mangas.add(new Manga(4L, "Berserk", 25.99, 0));
