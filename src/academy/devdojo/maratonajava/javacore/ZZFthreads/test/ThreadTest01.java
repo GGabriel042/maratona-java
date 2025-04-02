@@ -15,6 +15,11 @@ class ThreadExample extends Thread{
             if (i % 100 == 0 ) {
                 System.out.println();
             }
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 }
@@ -43,7 +48,7 @@ class ThreadExampleRunnable implements Runnable {
     }
 }
 
-public class ThreadTest {
+public class ThreadTest01 {
     public static void main(String[] args) {
 //        ThreadExample t1 = new ThreadExample('A');
 //        ThreadExample t2 = new ThreadExample('B');
