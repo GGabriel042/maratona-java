@@ -42,6 +42,7 @@ public class Membros {
         open = false;
         synchronized (this.emails){
             System.out.println(Thread.currentThread().getName() + " notificando a todos, que não estamos adicionando emails");
+            this.emails.notifyAll();
         }
     }
 }
